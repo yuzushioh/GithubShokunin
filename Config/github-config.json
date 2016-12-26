@@ -2,5 +2,5 @@
     "owner_name": "$OWNER_NAME",
     "repo_name": "$REPO_NAME",
     "review_team_id": "$TEAM_ID",
-    "github_token": "$GITHUB_Token"
+    "github_token": "$GITHUB_TOKEN"
 }
