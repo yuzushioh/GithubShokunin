@@ -1,4 +1,4 @@
 {
-    "token": "",
-    "bot_name": ""
+    "token": "$BOT_TOKEN",
+    "bot_name": "$BOT_NAME"
 }
