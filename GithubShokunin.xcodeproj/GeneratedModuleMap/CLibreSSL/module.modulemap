@@ -1,0 +1,5 @@
+module CLibreSSL {
+    umbrella header "/Users/yuzushioh/GithubShokunin/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include/CLibreSSL.h"
+    link "CLibreSSL"
+    export *
+}
