@@ -8,14 +8,17 @@
 
 
 import Foundation
+import libc
 
 extension Array {
     func chooseElementAtRandom() -> Element {
         #if os(Linux)
-            let index = Int(libc.random() % Int(count))
+            let value = UInt32(libc.random() % Int(count))
         #else
-            let index = Int(arc4random_uniform(UInt32(count)))
+            let value = arc4random_uniform(UInt32(count))
         #endif
+        
+        let index = Int(value)
         
         return self[index]
     }
