@@ -7,6 +7,6 @@ drop.get("/") { request in
     return "Hellow World! I'm GithubShokunin!"
 }
 
-try WebSocketManager.shared.connectWebSocket()
+//try WebSocketManager.shared.connectWebSocket()
 
 drop.run()
