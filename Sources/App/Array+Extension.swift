@@ -6,11 +6,17 @@
 //
 //
 
+
 import Foundation
 
 extension Array {
     func chooseElementAtRandom() -> Element {
-        let index = Int(arc4random_uniform(UInt32(self.count)))
+        #if os(Linux)
+            let index = Int(libc.random() % Int(count))
+        #else
+            let index = Int(arc4random_uniform(UInt32(count)))
+        #endif
+        
         return self[index]
     }
 }
